@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="titre">
+            <img src="/Images/AutoKey_LOGO.png" alt="AutoKey_LOGO">
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/1_Acceuil/index.html">Acceuil</a></li>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/2_Cars/index.html">Voitures</a></li>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/3_Contact/index.html">Contact</a></li>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/4_%C3%80%20propos/index.html">À propos</a></li>
+                </ul>
+                <div class="btn-account">
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/6_Log%20in/index.html" id="btn1">Log in</a>
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/5_Sign%20Up/index.html" id="btn2">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+        <div class="container1">
+            <h1>Contactez-nous</h1>
+            <h3>Nous avons la pour votre questions</h3>
+        </div>
+
+        <form class="Formulaire" action="/submit" method="post">
+            <label class="elements" for="Nom">
+                <legend>Nom :</legend>
+            </label>
+            <input class="champ" type="text" id="Nom" name="Nom" required placeholder="  🪪 Entrez votre nom">
+            <label class="elements" for="prenom">
+                <legend>Prenom :</legend>
+            </label>
+            <input class="champ" type="text" name="prenom" id="prenom" required placeholder="  🪪 Entrez votre prenom">
+            <label class="elements" for="email">
+                <legend>Adresse email :</legend>
+            </label>
+            <input class="champ" type="email" name="email" id="email" required placeholder="  ✉  Entrez votre email">
+            <label class="elements" for="password">
+                <legend>Password :</legend>
+            </label>
+            <input class="champ" type="password" name="password" id="password" required
+                placeholder="  🔑 Entrez votre mot de passe">
+            <button type="submit">Envoyer</button><br><br>
+            <button type="reset">Annuler</button>
+        </form>
+
+        <footer class="footer-container">
+            <div class="footer-top">
+                <div class="left">
+                    <h3>AutoKey</h3>
+                    <p>Votre partenaire de confiance pour la location des voitures depuis 2011.</p>
+                </div>
+
+                <div class="center">
+                    <h3>Liens rapides</h3>
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/1_Acceuil/index.html">Acceuil</a>
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/2_Cars/index.html">Voitures</a>
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/3_Contact/index.html">Contact</a>
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/4_%C3%80%20propos/index.html">À propos</a>
+                </div>
+
+                <div class="right">
+                    <h3>Contact</h3>
+                    <p id="p1">📧 contact@autokey.ma</p>
+                    <p id="p2">📞 +212 3 23 23 23 23</p>
+                    <p id="p3">📍 Ouled Teima, Maroc</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AutoKey. Tous droits réservés.</p>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Créez votre compte</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <video class="vid_background" autoplay muted loop playsinline>
+        <source src="/Videos/blur_and_bokeh_abstract_motion_glittering_particles_and_dark_blue_background.mp4" type="video/mp4">
+    </video>
+
+    <div class="titre">
+        <img src="/Images/AutoKey_LOGO.png" alt="AutoKey_LOGO">
+        
+        <h1 id="h1_1">Créer votre compte</h1>
+        <form class="Formulaire" action="/submit" method="post">
+            <label class="elements" for="Nom">
+                <legend>Nom :</legend>
+            </label>
+            <input class="champ" type="text" id="Nom" name="Nom" required placeholder="  🪪 Entrez votre nom">
+            <label class="elements" for="prenom">
+                <legend>Prenom :</legend>
+            </label>
+            <input class="champ" type="text" name="prenom" id="prenom" required placeholder="  🪪 Entrez votre prenom">
+            <label class="elements" for="email">
+                <legend>Adresse email :</legend>
+            </label>
+            <input class="champ" type="email" name="email" id="email" required placeholder="  ✉  Entrez votre email">
+            <label class="elements" for="password">
+                <legend>Password :</legend>
+            </label>
+            <input class="champ" type="password" name="password" id="password" required
+                placeholder="  🔑 Entrez votre mot de passe">
+            <button id="btn_SUp" type="submit">Sign Up</button>
+        </form>
+        <div class="Q">
+            <legend>Vous avez déjà un compte ?</legend>
+            <a href="http://127.0.0.1:5500/MINI-PROJET/6_Log%20in/index.html">Log in</a>
+        </div>
+    </div>
+
+    <footer class="fin_1">
+        <p>&copy; 2026 AutoKey. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoKey - Allocation des voitures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titre">
+            <img src="/Images/AutoKey_LOGO.png" alt="AutoKey_LOGO"> 
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/1_Acceuil/index.html">Acceuil</a></li>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/2_Cars/index.html">Voitures</a></li>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/3_Contact/index.html">Contact</a></li>
+                    <li><a href="http://127.0.0.1:5500/MINI-PROJET/4_%C3%80%20propos/index.html">À propos</a></li>
+                </ul>
+                <div class="btn-account">
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/6_Log%20in/index.html" id="btn1">Log in</a>
+                    <a href="http://127.0.0.1:5500/MINI-PROJET/5_Sign%20Up/index.html" id="btn2">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+        <div class="desc">
+            <h1>Welcome to AutoKey</h1>
+            <h2>Ici vous trouverez bien plus qu'une simple voiture</h2>
+            <h3>15 ans d'expertise automobile à votre service</h3>
+            <h3>La clé de votre prochaine aventure</h3>
+        </div>
+    </header>
+
+    <h2 id="Poplr_Car_titre">Nos voitures les plus populaires</h2>
+    <div class="popular_cars">
+
+        <div class="car1">
+            <img src="/Images/Toyota Corolla.webp" alt="Toyota Corolla">
+            <p id="p1">Toyota Corolla</p>
+            <p id="p2">Toyota Motor Corporation</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <p class="btn-reserve" onclick="openReservation('Toyota Corolla')">550 MAD/jour</p>
+        </div>
+
+        <div class="car2">
+            <img src="/Images/Audi A6.avif" alt="Audi A6">
+            <p id="p1">Audi A6</p>
+            <p id="p2">Volkswagen Group - Audi AG</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <p class="btn-reserve" onclick="openReservation('Audi A6')">1450 MAD/jour</p>
+        </div>
+
+        <div class="car3">
+            <img src="/Images/Dacia Logan.jpg" alt="Dacia Logan">
+            <p id="p1">Dacia Logan</p>
+            <p id="p2">Renault Group - Dacia</p>
+            <p id="p3">Manuelle</p>
+            <p id="p4">5 places</p>
+            <p class="btn-reserve" onclick="openReservation('Dacia Logan')">350 MAD/jour</p>
+        </div>
+    </div>
+
+    <section class="caracts">
+        <h2>Pourqoui Nous Choisis ?</h2>
+        <div class="caracts-container">
+            <div class="caracts-card">
+                <div class="icon-box">🔝</div>
+                <h3>Qualité</h3>
+                <p>Des voitures entretenus pour votre sécurité.</p>
+            </div>
+            <div class="caracts-card">
+                <div class="icon-box">💵</div>
+                <h3>Meilleurs Prix</h3>
+                <p>Des prix transparents et raisonnables.</p>
+            </div>
+            <div class="caracts-card">
+                <div class="icon-box">🎧</div>
+                <h3>24/7 Support</h3>
+                <p>Notre équipe est toujours là pour vous aider.</p>
+            </div>
+            <div class="caracts-card">
+                <div class="icon-box">📍</div>
+                <h3>Locations</h3>
+                <p>Plusieurs emplacements pour votre service.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-top">
+            <div class="left">
+                <h3>AutoKey</h3>
+                <p>Votre partenaire de confiance pour la location des voitures depuis 2011.</p>
+            </div>
+
+            <div class="center">
+                <h3>Liens rapides</h3>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/1_Acceuil/index.html">Acceuil</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/2_Cars/index.html">Voitures</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/3_Contact/index.html">Contact</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/4_%C3%80%20propos/index.html">À propos</a>
+            </div>
+
+            <div class="right">
+                <h3>Contact</h3>
+                <p id="p1">📧 contact@autokey.ma</p>
+                <p id="p2">📞 +212 3 23 23 23 23</p>
+                <p id="p3">📍 Ouled Teima, Maroc</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AutoKey. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div id="reservation" class="container">
+
+        <div class="box">
+            <span class="ferme" onclick="closeReservation()">×</span>
+
+            <h2>Réservation</h2>
+            <p id="carName"></p>
+
+            <input type="text" placeholder="Nom complete">
+            <input type="date">
+            <input type="date">
+
+            <button class="btn-reserve" onclick="confirmReservation()">Confirmer</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

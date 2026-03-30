@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voitures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titre">
+        <img src="/Images/AutoKey_LOGO.png" alt="AutoKey_LOGO">
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/MINI-PROJET/1_Acceuil/index.html">Acceuil</a></li>
+                <li><a href="http://127.0.0.1:5500/MINI-PROJET/2_Cars/index.html">Voitures</a></li>
+                <li><a href="http://127.0.0.1:5500/MINI-PROJET/3_Contact/index.html">Contact</a></li>
+                <li><a href="http://127.0.0.1:5500/MINI-PROJET/4_%C3%80%20propos/index.html">À propos</a></li>
+            </ul>
+            <div class="btn-account">
+                <a href="http://127.0.0.1:5500/MINI-PROJET/6_Log%20in/index.html" id="btn1">Log in</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/3_Sign%20Up/index.html" id="btn2">Sign Up</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="titre_cont">
+        <h1>Nos voitures disponibles</h1>
+    </div>
+    <div class="All_cars">
+
+        <div class="car car1">
+            <img src="/Images/Toyota Corolla.webp" alt="Toyota Corolla">
+            <p id="p1">Toyota Corolla</p>
+            <p id="p2">Toyota Motor Corporation</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Toyota Corolla')">550 DH/jour</button>
+        </div>
+
+        <div class="car car2">
+            <img src="/Images/Audi A6.avif" alt="Audi A6">
+            <p id="p1">Audi A6</p>
+            <p id="p2">Volkswagen Group - Audi AG</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Audi A6')">1450 DH/jour</button>
+        </div>
+
+        <div class="car car3">
+            <img src="/Images/Dacia Logan.jpg" alt="Dacia Logan">
+            <p id="p1">Dacia Logan</p>
+            <p id="p2">Renault Group - Dacia</p>
+            <p id="p3">Manuelle</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Dacia Logan')">350 DH/jour</button>
+        </div>
+
+
+        <div class="car car4">
+            <img src="/Images/Dacia_Duster.jpg" alt="Dacia Duster">
+            <p id="p1">Dacia Duster</p>
+            <p id="p2">Renault Group - Dacia</p>
+            <p id="p3">Manuelle</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Dacia Duster')">450 DH/jour</button>
+        </div>
+
+        <div class="car car5">
+            <img src="/Images/Volkswagen_Tiguan.jpg" alt="Volkswagen Tiguan">
+            <p id="p1">Volkswagen Tiguan</p>
+            <p id="p2">Volkswagen Group</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Volkswagen Tiguan')">900 DH/jour</button>
+        </div>
+
+        <div class="car car6">
+            <img src="/Images/Renault_Clio.jpg" alt="Renault Clio">
+            <p id="p1">Renault Clio</p>
+            <p id="p2">Renault Group</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Renault Clio')">500 DH/jour</button>
+        </div>
+
+
+
+        <div class="car car7">
+            <img src="/Images/Dacia_Sandero.jpg" alt="Dacia Sandero">
+            <p id="p1">Dacia Sandero</p>
+            <p id="p2">Renault Group</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Dacia Sandero')">370 DH/jour</button>
+        </div>
+
+        <div class="car car8">
+            <img src="/Images/Dodge_Charger.jpg" alt="Dodge Charger">
+            <p id="p1">Dodge Charger</p>
+            <p id="p2">Stellantis - Dodge</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Dodge Charger')">3300 DH/jour</button>
+        </div>
+
+        <div class="car car9">
+            <img src="/Images/Dodge_Challenger.avif" alt="Dodge Challenger">
+            <p id="p1">Dodge Challenger</p>
+            <p id="p2">Stellantis - Dodge</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Dodge Challenger')">4400 DH/jour</button>
+        </div>
+
+        <div class="car car10">
+            <img src="/Images/Mercedes neuve.webp" alt="Mercedes neuve">
+            <p id="p1">Mercedes neuve</p>
+            <p id="p2">Mercedes-Benz</p>
+            <p id="p3">Automatic</p>
+            <p id="p4">5 places</p>
+            <button class="btn-reserve" onclick="openReservation('Range Rover')">2800 DH/jour</button>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-top">
+            <div class="left">
+                <h3>AutoKey</h3>
+                <p>Votre partenaire de confiance pour la location des voitures depuis 2011.</p>
+            </div>
+
+            <div class="center">
+                <h3>Liens rapides</h3>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/1_Acceuil/index.html">Acceuil</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/2_Cars/index.html">Voitures</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/3_Contact/index.html">Contact</a>
+                <a href="http://127.0.0.1:5500/MINI-PROJET/5_Sign%20Up/index.html">À propos</a>
+            </div>
+
+            <div class="right">
+                <h3>Contact</h3>
+                <p id="p1">📧 contact@autokey.ma</p>
+                <p id="p2">📞 +212 3 23 23 23 23</p>
+                <p id="p3">📍 Ouled Teima, Maroc</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AutoKey. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    
+    <div id="reservation" class="container">
+
+        <div class="box">
+            <span class="ferme" onclick="closeReservation()">×</span>
+
+            <h2>Réservation</h2>
+            <p id="carName"></p>
+
+            <input type="text" placeholder="Nom complete">
+            <input type="date">
+            <input type="date">
+
+            <button class="btn-reserve" onclick="confirmReservation()">Confirmer</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
